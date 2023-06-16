@@ -1,0 +1,244 @@
+@import "../variables/images";
+@import "../variables/fonts";
+@import "../variables/colors";
+
+.carousel-item {
+  //   margin-top: 100px;
+  //   margin-top: -100px;
+  img {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+  #img1 {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/img1.jpg);
+    background-size: cover;
+  }
+
+  #img2 {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/img3.jpg);
+    background-size: cover;
+  }
+  #img3 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/img4.jpg);
+    background-size: cover;
+  }
+  .home-img-text {
+    font-family: $font-family_1;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+    top: 0;
+    margin-top: 180px;
+    margin-left: 180px;
+  }
+}
+#myCarousel {
+  .carousel-indicators {
+    button {
+      cursor: pointer;
+      background: #fff;
+      border-radius: 40px;
+      width: 22px;
+      height: 4px;
+    }
+  }
+}
+
+.home-img-text {
+  p {
+    color: $color_1;
+    padding-bottom: 20px;
+    width: 60%;
+    line-height: 0.9;
+  }
+  h2 {
+    color: $color_2;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 20px 0 20px;
+    b {
+      color: $color_3;
+    }
+  }
+}
+
+section {
+  padding-bottom: 0;
+  h2 {
+    color: $color_4;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 60px 0 80px;
+    b {
+      color: $color_5;
+    }
+    &::after {
+      content: "";
+      width: 200px;
+      position: absolute;
+      margin: 0 auto;
+      height: 4px;
+      background: rgba(0, 0, 0, 0.2);
+      left: 0;
+      right: 0;
+      bottom: -20px;
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  transition: 0.5s text-decoration ease-in-out;
+  &:hover {
+    background-color: $background-color_1;
+    color: $color_6;
+  }
+}
+.custom-toggler {
+  color: $color_6;
+  border-color: $border-color_1;
+  border: none;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  i {
+    color: $color_7;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.notshow {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: $background-color_2;
+  box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
+}
+.Newbooks {
+  background-color: $background-color_3;
+}
+.carousel {
+  overflow: hidden;
+  cursor: grab;
+  margin-bottom: 50px;
+  z-index: 1050;
+}
+.inner-carousel {
+  display: flex;
+}
+.item {
+  // min-height: 8rem;
+  // min-width: 14rem;
+  box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.42);
+  border-radius: 1rem;
+  background-color: $background-color_4;
+  margin: 8px;
+  img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px;
+    h4 {
+      font-size: 20px;
+      font-family: $font-family_1;
+      width: 50%;
+      padding-right: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $color_8;
+      transition: 0.2s color ease-in;
+      &:hover {
+        color: $color_9;
+      }
+    }
+  }
+  .item-price {
+    font-size: 18px;
+    strike {
+      color: $color_10;
+      margin-right: 10px;
+    }
+    span {
+      color: $color_11;
+      font-size: 100%;
+    }
+  }
+}
+.star-rating {
+  i {
+    font-size: 16px;
+    color: $color_12;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-item {
+    .img-text {
+      margin-left: 80px;
+    }
+  }
+  .img-text {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .item {
+    max-height: 24rem;
+    max-width: 10rem;
+    margin: 8px;
+    img {
+      max-height: 14rem;
+      max-width: 14rem;
+      pointer-events: none;
+    }
+    .item-price {
+      font-size: 14px;
+    }
+  }
+  .star-rating {
+    i {
+      font-size: 14px;
+    }
+  }
+}

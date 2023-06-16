@@ -1,0 +1,43 @@
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  box-shadow: 0 0 10px rgb(71, 69, 69);
+
+  .text-secondary {
+    text-align: justify;
+    max-width: 800px;
+  }
+
+  .title-about {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6347;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-indent: 2rem;
+  }
+}
+
+// Responsiveness
+@media screen and (max-width: 768px) {
+  .aboutus {
+    .titleabout {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+//mixin pour center les eliment avec enfant unique
+@import "./variables/fonts";
+@import "./variables/colors";
+$breakPoint-Tablet: 768px;
+$breakPoint-Desktop: 1024px;
+@mixin center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin childCener {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  // font-family: "Oswald-Regular";
+  background: $color6;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin block {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+@mixin around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin hover-nav {
+  background-color: $color2;
+  color: $color1;
+  transition: 0.5s;
+}
+@keyframes headeranim {
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes up {
+  to {
+    transform: translateY(-15%);
+  }
+}
+
+@keyframes pop {
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+@keyframes popBooking {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes showNav {
+  to {
+    opacity: 1;
+    height: 100vh;
+  }
+}
+@keyframes autoScroll {
+  to {
+    opacity: 1;
+    bottom: 4rem;
+  }
+}
+
+@keyframes emailOk {
+  to {
+    transform: translate(0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  input:focus {
+    outline: none;
+  }
+  ::selection {
+    color: $color1;
+    background-color: $color2;
+  }
+  textarea {
+    resize: none;
+  }
+}

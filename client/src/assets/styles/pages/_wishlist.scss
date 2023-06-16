@@ -1,0 +1,49 @@
+.cart {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+
+  h2 {
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .items {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+    img {
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .bookname {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .btn-link {
+      color: #333;
+      &:hover {
+        color: #777;
+      }
+    }
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    .items {
+      flex-direction: column;
+    }
+  }
+}

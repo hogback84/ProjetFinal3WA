@@ -1,0 +1,90 @@
+.editbooks {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .itemdata {
+    margin-bottom: 20px;
+
+    label {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input,
+    textarea {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      color: #333;
+
+      &:focus {
+        outline: none;
+        border-color: #666;
+      }
+    }
+
+    input[type="number"] {
+      appearance: textfield;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+    }
+  }
+
+  .d-inline-flex {
+    display: inline-flex;
+  }
+
+  .btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .btn-danger {
+    background-color: #ff3d3d;
+    border: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+
+    .itemdata {
+      input[type="text"],
+      input[type="number"],
+      textarea {
+        font-size: 14px;
+      }
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+}

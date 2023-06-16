@@ -1,0 +1,121 @@
+$mobile-breakpoint: 768px;
+$image-size: 150px;
+
+.all-books {
+  .most-books {
+    .container {
+      .row {
+        .col-sm-6 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .module-large {
+    .container {
+      .allItems {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        .shop-items {
+          flex: 0 0 calc(25% - 1rem);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .shop-item-image {
+            width: $image-size;
+            height: $image-size;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            padding: 8px;
+            margin: 10px;
+            border: 0.5px solid #d2d2d2;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
+            transition: transform 0.3s; // aggiungi questa riga per l'effetto hover
+
+            &:hover {
+              img {
+                transform: scale(
+                  1.1
+                ); // aggiungi questa riga per l'effetto hover
+              }
+            }
+          }
+
+          .shop-item-detail {
+            margin-top: 1rem;
+
+            .shop-item-title {
+              font-size: 1rem;
+              font-weight: bold;
+              text-align: center;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        button {
+          background-color: #fff;
+          border: 1px solid #007bff;
+          color: #007bff;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          transition: background-color 0.2s, color 0.2s;
+
+          &:hover {
+            background-color: #007bff;
+            color: #fff;
+          }
+
+          &.active {
+            background-color: #007bff;
+            color: #fff;
+          }
+
+          &:disabled {
+            cursor: not-allowed;
+            background-color: #fff;
+            color: #6c757d;
+            border-color: #6c757d;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Aggiungi le media queries per gestire il layout su schermi piccoli
+@media (max-width: $mobile-breakpoint) {
+  .all-books {
+    .module-large {
+      .container {
+        .allItems {
+          .shop-items {
+            flex: 0 0 calc(100% - 1rem);
+          }
+        }
+      }
+    }
+  }
+}

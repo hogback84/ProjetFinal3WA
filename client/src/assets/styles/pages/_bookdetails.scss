@@ -1,0 +1,26 @@
+.bookdetalis {
+  .book-image {
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  .lead {
+    text-align: justify;
+  }
+}
+@media (max-width: 1100px) {
+  .bookdetails .row {
+    flex-direction: column;
+    .lead {
+      text-align: justify;
+    }
+    .col-md-4 {
+      display: contents;
+    }
+  }
+
+  .bookdetails .col-md-4 {
+    margin-bottom: 20px;
+  }
+}

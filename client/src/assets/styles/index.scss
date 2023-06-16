@@ -1,0 +1,23 @@
+//rssemble tous les fichier sass
+
+@import "./settings";
+@import "./variables/fonts";
+@import "./variables/images";
+@import "./variables/colors";
+@import "./layouts/navbar";
+@import "./pages/aboutus";
+@import "./pages/allbooks";
+@import "./pages/auth";
+@import "./pages/home";
+@import "./pages/bookdetails";
+@import "./pages/contacts";
+@import "./pages/wishlist";
+@import "./components/addnewitem";
+@import "./components/adminlayout";
+@import "./components/alert";
+@import "./components/authors";
+@import "./components/booksview";
+@import "./components/editbook";
+@import "./components/edititem";
+@import "./layouts/footer";
+@import "./components/managment";

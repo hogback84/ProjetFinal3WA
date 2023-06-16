@@ -1,0 +1,48 @@
+.admin-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  nav {
+    flex: 1 1 200px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        padding: 0.5rem 0;
+
+        a {
+          display: block;
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
+
+  .admin-content {
+    flex: 1 1 calc(100% - 220px);
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+
+    nav {
+      flex: 1 1 100%;
+    }
+
+    .admin-content {
+      flex: 1 1 100%;
+    }
+  }
+}
