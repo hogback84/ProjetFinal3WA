@@ -113,17 +113,46 @@
   src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
 @font-face {
+  font-family: "font-pop";
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
   font-family: "font-rob";
-  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../../fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "font-gildas";
-  src: url(../fonts/GildaDisplay-Regular.ttf);
+  src: url(../../fonts/GildaDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "font-pop-bold";
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "font-pop200";
+  src: url(../../fonts/Poppins-ExtraLight.ttf);
 }
 @font-face {
   font-family: "font-rob300";
-  src: url(../fonts/Roboto-Light.ttf);
+  src: url(../../fonts/Roboto-Light.ttf);
 }
+@font-face {
+  font-family: "font-pop400";
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "font-rob400";
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "jadyn";
+  src: url(../../fonts/Jadyn.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -133,71 +162,154 @@ body {
   background: rgba(255, 255, 255, 0.836);
 }
 
-@keyframes headeranim {
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
+@font-face {
+  font-family: "lato-Black";
+  src: url(../../fonts/Lato/Lato-Black.ttf);
 }
-@keyframes up {
-  to {
-    transform: translateY(-15%);
-  }
+@font-face {
+  font-family: "lato-bBlackItalic";
+  src: url(../../fonts/Lato/Lato-BlackItalic.ttf);
 }
-@keyframes pop {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@font-face {
+  font-family: "lato-Bold";
+  src: url(../../fonts/Lato/Lato-Bold.ttf);
 }
-@keyframes popBooking {
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+@font-face {
+  font-family: "lato-BoldItalic";
+  src: url(../../fonts/Lato/Lato-BoldItalic.ttf);
 }
-@keyframes showNav {
-  to {
-    opacity: 1;
-    height: 100vh;
-  }
+@font-face {
+  font-family: "lato-Light";
+  src: url(../../fonts/Lato/Lato-Light.ttf);
 }
-@keyframes autoScroll {
-  to {
-    opacity: 1;
-    bottom: 4rem;
-  }
+@font-face {
+  font-family: "lato-regular";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
 }
-@keyframes emailOk {
-  to {
-    transform: translate(0);
-  }
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../../fonts/Montserrat/static/Montserrat-Black.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../../fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
-* input:focus {
-  outline: none;
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../../fonts/Montserrat/static/Montserrat-Light.ttf);
 }
-* ::-moz-selection {
-  color: #ff4f8b;
-  background-color: #dff1ff;
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
-* ::selection {
-  color: #ff4f8b;
-  background-color: #dff1ff;
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url(../../fonts/Noto_Sans/NotoSans-Black.ttf);
 }
-* textarea {
-  resize: none;
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url(../../fonts/Noto_Sans/NotoSans-Light.ttf);
 }
-
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url(../../fonts/Noto_Sans/NotoSans-Medium.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url(../../fonts/Open_Sans/static/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url(../../fonts/Open_Sans/static/OpenSans-Medium.ttf);
+}
+@font-face {
+  font-family: "OpenSans_Condensed-Regular";
+  src: url(../../fonts/Open_Sans/static/OpenSans_Condensed-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(../../fonts/Oswald/static/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url(../../fonts/Oswald/static/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src: url(../../fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "font-pop";
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font-rob";
+  src: url(../../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "font-gildas";
+  src: url(../../fonts/GildaDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "font-pop-bold";
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "font-pop200";
+  src: url(../../fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "font-rob300";
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "font-pop400";
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "font-rob400";
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "jadyn";
+  src: url(../../fonts/Jadyn.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -787,16 +899,40 @@ body {
   src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
 @font-face {
+  font-family: "font-pop";
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
   font-family: "font-rob";
-  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../../fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "font-gildas";
-  src: url(../fonts/GildaDisplay-Regular.ttf);
+  src: url(../../fonts/GildaDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "font-pop-bold";
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "font-pop200";
+  src: url(../../fonts/Poppins-ExtraLight.ttf);
 }
 @font-face {
   font-family: "font-rob300";
-  src: url(../fonts/Roboto-Light.ttf);
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "font-pop400";
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "font-rob400";
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "jadyn";
+  src: url(../../fonts/Jadyn.ttf);
 }
 .carousel-item img {
   width: 100%;
@@ -1632,442 +1768,96 @@ cursor .contacts .contact-form button:hover {
   }
 }
 
-@font-face {
-  font-family: "lato-Black";
-  src: url(../../fonts/Lato/Lato-Black.ttf);
+.most-books {
+  background-color: white;
+  margin-top: 64px;
 }
-@font-face {
-  font-family: "lato-bBlackItalic";
-  src: url(../../fonts/Lato/Lato-BlackItalic.ttf);
-}
-@font-face {
-  font-family: "lato-Bold";
-  src: url(../../fonts/Lato/Lato-Bold.ttf);
-}
-@font-face {
-  font-family: "lato-BoldItalic";
-  src: url(../../fonts/Lato/Lato-BoldItalic.ttf);
-}
-@font-face {
-  font-family: "lato-Light";
-  src: url(../../fonts/Lato/Lato-Light.ttf);
-}
-@font-face {
-  font-family: "lato-regular";
-  src: url(../../fonts/Lato/Lato-Regular.ttf);
-}
-@font-face {
-  font-family: "Montserrat-Black";
-  src: url(../../fonts/Montserrat/static/Montserrat-Black.ttf);
-}
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url(../../fonts/Montserrat/static/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: "Montserrat-Light";
-  src: url(../../fonts/Montserrat/static/Montserrat-Light.ttf);
-}
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: url(../../fonts/Montserrat/static/Montserrat-Medium.ttf);
-}
-@font-face {
-  font-family: "NotoSans-Black";
-  src: url(../../fonts/Noto_Sans/NotoSans-Black.ttf);
-}
-@font-face {
-  font-family: "NotoSans-Light";
-  src: url(../../fonts/Noto_Sans/NotoSans-Light.ttf);
-}
-@font-face {
-  font-family: "NotoSans-Medium";
-  src: url(../../fonts/Noto_Sans/NotoSans-Medium.ttf);
-}
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: url(../../fonts/Open_Sans/static/OpenSans-Bold.ttf);
-}
-@font-face {
-  font-family: "OpenSans-Italic";
-  src: url(../../fonts/Open_Sans/static/OpenSans-Italic.ttf);
-}
-@font-face {
-  font-family: "OpenSans-Medium";
-  src: url(../../fonts/Open_Sans/static/OpenSans-Medium.ttf);
-}
-@font-face {
-  font-family: "OpenSans_Condensed-Regular";
-  src: url(../../fonts/Open_Sans/static/OpenSans_Condensed-Regular.ttf);
-}
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
-}
-@font-face {
-  font-family: "Oswald-Medium";
-  src: url(../../fonts/Oswald/static/Oswald-Medium.ttf);
-}
-@font-face {
-  font-family: "Oswald-Bold";
-  src: url(../../fonts/Oswald/static/Oswald-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto-Black";
-  src: url(../../fonts/Roboto/Roboto-Black.ttf);
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto-BoldItalic";
-  src: url(../../fonts/Roboto/Roboto-BoldItalic.ttf);
-}
-@font-face {
-  font-family: "Roboto-Medium";
-  src: url(../../fonts/Roboto/Roboto-Medium.ttf);
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../../fonts/Roboto/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: "SourceSansPro-Black";
-  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
-}
-@font-face {
-  font-family: "SourceSansPro-Bold";
-  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
-}
-@font-face {
-  font-family: "SourceSansPro-Regular";
-  src: url(../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
-}
-@font-face {
-  font-family: "font-rob";
-  src: url(../fonts/Roboto-Medium.ttf);
-}
-@font-face {
-  font-family: "font-gildas";
-  src: url(../fonts/GildaDisplay-Regular.ttf);
-}
-@font-face {
-  font-family: "font-rob300";
-  src: url(../fonts/Roboto-Light.ttf);
-}
-li {
-  list-style: none;
-}
-
-body {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.836);
-}
-
-@keyframes headeranim {
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes up {
-  to {
-    transform: translateY(-15%);
-  }
-}
-@keyframes pop {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes popBooking {
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-@keyframes showNav {
-  to {
-    opacity: 1;
-    height: 100vh;
-  }
-}
-@keyframes autoScroll {
-  to {
-    opacity: 1;
-    bottom: 4rem;
-  }
-}
-@keyframes emailOk {
-  to {
-    transform: translate(0);
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-* input:focus {
-  outline: none;
-}
-* ::-moz-selection {
-  color: #ff4f8b;
-  background-color: #dff1ff;
-}
-* ::selection {
-  color: #ff4f8b;
-  background-color: #dff1ff;
-}
-* textarea {
-  resize: none;
-}
-
-.footer {
-  background-color: black;
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.footer .flex {
-  background-color: black;
-  padding: 10px;
-  min-width: 100%;
+.most-books .books {
   display: flex;
-  flex-direction: column;
-  color: #ff4f8b;
-  padding: 1rem;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer .flex {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 100%;
-    margin-bottom: 20px;
-  }
-}
-.footer .flex .hotel-logo .logo-footer {
-  min-width: 100%;
-  color: #ff4f8b;
-  font-family: "font-gildas", sans-serif;
-  max-width: 30%;
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 10px 10px;
-  background-color: rgb(0, 0, 0) p;
-  background-color-color: #ff4f8b;
-  background-color-text-transform: uppercase;
-  background-color-font-family: "font-rob", sans-serif;
-  background-color-font-weight: 400;
-  background-color-font-weight: 300;
-  background-color-letter-spacing: 2px;
-}
-.footer .flex .hotel-logo .logo-footer p:last-child {
-  max-width: 50%;
-  margin: 0 auto;
-  background-color: #ff4f8b;
-  color: #dff1ff;
-  font-size: 0.8rem;
-}
-.footer .flex .hotel-logo .logo-footer .lin {
-  width: 50%;
-  margin: 0 auto;
-  border-bottom: 1px solid rgb(248, 248, 248);
-}
-.footer .flex .hotel-logo .Stars {
-  margin-bottom: 25px;
-}
-.footer .flex .hotel-logo .phone {
-  margin-bottom: 25px;
-}
-.footer .flex .hotel-logo .phone p:first-child {
-  font-family: "font-rob300", sans-serif;
-  font-size: 0.938rem;
-  line-height: 0.938rem;
-  color: rgb(254, 254, 254);
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .hotel-logo .phone p:first-child {
-    font-size: 0.8rem;
-  }
-}
-.footer .flex .hotel-logo .phone p:last-child {
-  margin-top: 20px;
-  font-family: "font-gildas", sans-serif;
-  font-size: 0.938rem;
-  line-height: 0.938rem;
-  color: rgb(254, 254, 254);
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .hotel-logo .phone p:last-child {
-    font-size: 0.8rem;
-  }
-}
-.footer .flex .gildas p {
-  font-family: "font-gildas", sans-serif;
-  font-size: 0.938rem;
-  line-height: 1.25rem;
-  color: rgb(254, 254, 254);
-}
-@media screen and (max-width: 550px) {
-  .footer .flex .trip-logo {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2rem auto;
-  }
-}
-.footer .flex .trip-logo p:first-of-type {
-  font-family: "font-gildas", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  color: rgb(254, 254, 254);
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .trip-logo p:first-of-type {
-    font-size: 1rem;
-  }
-}
-.footer .flex .trip-logo p:last-of-type {
-  font-family: "font-rob300", sans-serif;
-  font-size: 0.813rem;
-  line-height: 0.813rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #fffd87;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .trip-logo p:last-of-type {
-    font-size: 0.7rem;
-  }
-}
-.footer .flex .trip-logo .trip-logo-img img {
-  max-width: 6.7rem;
-}
-.footer .flex .socials-medias ul {
-  display: flex;
-  justify-content: space-around;
-}
-.footer .flex .socials-medias ul li,
-.footer .flex .socials-medias ul li a {
-  color: rgb(254, 254, 254);
-  font-size: 1.6rem;
-  transition: 0.4s;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .socials-medias ul li,
-  .footer .flex .socials-medias ul li a {
-    font-size: 1.2rem;
-  }
-}
-.footer .flex .socials-medias ul li:hover,
-.footer .flex .socials-medias ul li a:hover {
-  transform: scale(1.25);
-}
-.footer .flex .accommodation {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 0 auto;
 }
-.footer .flex .accommodation > * {
-  margin-bottom: 10px;
+.most-books .books .book {
+  width: 17%;
+  padding: 8px;
+  margin: 10px;
+  border: 0.5px solid #d2d2d2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
 }
-.footer .flex .accommodation h3 {
-  text-transform: uppercase;
-  color: #fffd87;
+.most-books .book img {
+  border: 2px solid #d9d9d9;
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s transform ease-in-out;
 }
-@media screen and (min-width: 768px) {
-  .footer .flex .accommodation h3 {
-    font-size: 0.8rem;
+.most-books .book img:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+.most-books .book .thumb-content {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.most-books .book .thumb-content h5 {
+  color: #05293f;
+  font-family: "Sansita Swashed", cursive;
+}
+.most-books .book .thumb-content .item-price strike {
+  color: #313335;
+}
+.most-books .book .thumb-content .item-price span {
+  color: #00b90f;
+}
+.most-books .seemore-Btn {
+  font-size: 14px;
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 1100px;
+  width: 150px;
+  transition: 0.5s color ease-in-out;
+}
+.most-books .seemore-Btn:hover {
+  color: black;
+  background-color: white;
+}
+.most-books .seemore-Btn span {
+  padding-left: 5px;
+}
+.most-books seemore-Btn span {
+  text-decoration: none;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .most-books .most-books .book {
+    min-height: 8rem;
+    min-width: 10rem;
+  }
+  .most-books .seemore-Btn {
+    font-size: 12px;
+    margin: 0 0 10px 500px;
   }
 }
-.footer .flex .accommodation ul li > * {
-  margin-bottom: 20px;
-  color: rgb(254, 254, 254);
-  font-family: "font-gildas", sans-serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  transition: 0.4s;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .accommodation ul li > * {
-    font-size: 0.8rem;
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .most-books .seemore-Btn {
+    font-size: 12px;
+    margin: 0 0 10px 600px;
   }
 }
-.footer .flex .accommodation ul li > *:hover {
-  color: #fffd87;
-}
-.footer .flex .get-in-touche h3 {
-  margin-bottom: 10px;
-  color: #fffd87;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .get-in-touche h3 {
-    font-size: 0.8rem;
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .most-books .most-books .books .book {
+    width: 40%;
+    margin-bottom: 5px;
   }
-}
-.footer .flex .get-in-touche ul li > * {
-  margin-bottom: 10px;
-  color: rgb(254, 254, 254);
-  font-family: "font-gildas", sans-serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  transition: 0.4s;
-}
-@media screen and (min-width: 768px) {
-  .footer .flex .get-in-touche ul li > * {
-    font-size: 0.8rem;
-  }
-}
-.footer .flex .get-in-touche ul li > *:hover {
-  color: #fffd87;
-}
-@media screen and (min-width: 768px) {
-  .footer .rights {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer .rights {
-    display: flex;
-    justify-content: space-around;
-    min-width: 100%;
-  }
-}
-.footer .rights h4 {
-  letter-spacing: 2px;
-  color: rgb(216, 216, 216);
-  font-size: 0.688rem;
-  line-height: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .footer .rights h4 {
-    font-size: 0.48rem;
+  .most-books .seemore-Btn {
+    font-size: 13px;
+    margin: 40px 0 10px 220px;
   }
 }
 
