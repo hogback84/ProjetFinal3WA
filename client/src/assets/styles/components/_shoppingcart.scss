@@ -1,0 +1,107 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+
+  .cart {
+    padding: 2rem;
+    background: #f6f6f6;
+    border-radius: 5px;
+
+    .product-details {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .tablecart {
+        th,
+        td {
+          padding: 1.5rem;
+          text-align: left;
+        }
+
+        .bookImage {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        img {
+          border-radius: 5px;
+        }
+
+        .bookname {
+          font-size: 1rem;
+          color: #333;
+        }
+
+        button {
+          border: none;
+          background-color: transparent;
+
+          .fa-minus,
+          .fa-plus {
+            color: #888;
+          }
+
+          .delete {
+            color: #f44336;
+            cursor: pointer;
+          }
+        }
+
+        .input {
+          border: 1px solid #ddd;
+          padding: 0.5rem;
+          width: 2rem;
+          text-align: center;
+          margin: auto 0; // Added this line to center vertically
+        }
+
+        // Added this block to center vertically
+        .d-flex {
+          align-items: center;
+        }
+      }
+    }
+
+    .card {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+      .card-text {
+        color: #333;
+        font-weight: bold;
+      }
+
+      h6 {
+        color: #888;
+      }
+
+      button {
+        background-color: #f9a826;
+        color: #fff;
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #eb8c00;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container .cart {
+    .row {
+      flex-direction: column;
+    }
+  }
+}

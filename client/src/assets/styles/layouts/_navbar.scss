@@ -54,6 +54,9 @@ $accent-color: #ff8c00;
     list-style: none;
     z-index: 100;
 
+    gap: 64px;
+    margin-top: 15px;
+
     li {
       margin-right: 3rem;
 
@@ -78,6 +81,7 @@ $accent-color: #ff8c00;
   .nav-item {
     display: flex;
     align-items: center;
+    gap: 40px;
 
     .nav-icon {
       position: relative;
@@ -99,6 +103,7 @@ $accent-color: #ff8c00;
 
     .navbar-inline {
       display: flex;
+      gap: 60px;
 
       a,
       button {
@@ -118,12 +123,14 @@ $accent-color: #ff8c00;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar-items {
     .navbar-menu-icons {
       display: block;
     }
-
+    .navbar-left {
+      display: none;
+    }
     .navbar-center {
       position: absolute;
       top: 100%;
@@ -135,10 +142,12 @@ $accent-color: #ff8c00;
       max-height: 0;
       transition: max-height 0.4s ease-in;
       z-index: 9999;
+      gap: 34px;
+      margin-top: 0;
 
       &.active {
         // Sostituisci ':target' con '&.active'
-        max-height: 300px;
+        max-height: 100vh;
         display: flex;
       }
 
@@ -146,5 +155,17 @@ $accent-color: #ff8c00;
         margin: 0.5rem 0;
       }
     }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar-items .navbar-center li {
+    margin-right: 1rem; // Riduci il margine a tuo piacimento
+    gap: 1px;
+  }
+  .navbar-center {
+    gap: 1px;
+  }
+  ul {
+    padding-left: 0;
   }
 }

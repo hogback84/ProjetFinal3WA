@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useBooks from "../context/useBooks.js";
-
+import "../assets/styles/components/_shoppingcart.scss";
 const ShoppingCart = () => {
   const [cartBook, setCartBook] = useState([]);
   const [total, setTotal] = useState();

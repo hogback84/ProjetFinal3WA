@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav id="navbar" className="navbar-items">
-      <Link to="/">
+      <Link to="/" aria-label="Go to Momo Store Home">
         <div className="navbar-left">
           <span>Momo</span>
           <i className="fa-solid fa-book-open"></i>
@@ -45,25 +45,34 @@ const Navbar = () => {
       </ul>
 
       <div className="nav-item">
-        <Link className="nav-icon " to={"./shoppingcart"}>
+        <Link
+          className="nav-icon "
+          to={"./shoppingcart"}
+          aria-label="View shopping cart"
+        >
           <i className="fa fa-fw fa-cart-arrow-down " />
           <span className="navbar-cart "></span>
         </Link>
+
         <div className="navbar-inline">
           {currentUser ? (
             <>
               {currentUser.role === "admin" && (
-                <Link to="/admin" className="your-button-class">
+                <Link
+                  to="/admin"
+                  className="your-button-class"
+                  aria-label="Admin panel"
+                >
                   Admin
                 </Link>
               )}
 
-              <button onClick={handleLogout}>
+              <button onClick={handleLogout} aria-label="Logout">
                 <i className="fa fa-sign-out-alt"></i>
               </button>
             </>
           ) : (
-            <Link to="/auth">
+            <Link to="/auth" aria-label="Login">
               <i className="fa fa-user"></i>
             </Link>
           )}

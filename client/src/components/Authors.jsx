@@ -23,9 +23,9 @@ const Authors = () => {
 
   return (
     <section className="Authors">
-      <h2>
+      <h1>
         Famous <b>Authors</b>
-      </h2>
+      </h1>
       <div className="authors-search-wrapper">
         <input
           value={search}
@@ -53,8 +53,9 @@ const Authors = () => {
                   alt={`${author.name}'s portrait`}
                   className="author-img"
                 />
-
-                <h2 className="author-name">{author.name}</h2>
+                <h2 className="author-name" style={{ color: "#000" }}>
+                  {author.name}
+                </h2>
               </div>
             ))}
         </div>

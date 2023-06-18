@@ -11,7 +11,7 @@ const BooksView = () => {
       <div className="container" id="Scicence">
         <div className="row">
           <div className="col-md-12">
-            <h2>
+            <h2 className="bought-book">
               Most<b> Bought Books</b>
             </h2>
           </div>
@@ -25,7 +25,7 @@ const BooksView = () => {
                 />
 
                 <div className="thumb-content">
-                  <h5>{book.title}</h5>
+                  <h3>{book.title}</h3>
                   <p className="item-price">
                     <span style={{ textDecoration: "line-through" }}>
                       {book.price}

@@ -1,75 +1,48 @@
-.most-books {
-  background-color: white;
-  margin-top: 64px;
-  .books {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    .book {
-      width: 17%;
-      padding: 8px;
-      margin: 10px;
-      border: 0.5px solid #d2d2d2;
-      border-radius: 10px;
-      background-color: white;
-      box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
-    }
-  }
-  .book {
-    img {
-      border: 2px solid #d9d9d9;
-      padding: 4px;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      transition: 0.2s transform ease-in-out;
-      &:hover {
-        transform: scale(1.02);
-        opacity: 0.8;
-      }
-    }
-    .thumb-content {
-      margin-top: 2px;
-      display: flex;
-      justify-content: space-between;
-      h5 {
-        color: #05293f;
-        font-family: "Sansita Swashed", cursive;
-      }
-      .item-price {
-        strike {
-          color: #313335;
-        }
-        span {
-          color: #00b90f;
-        }
-      }
-    }
+footer {
+  position: relative;
+  .container-fluid.pt-2 {
+    background-color: rgb(77, 76, 76);
   }
 
-  .seemore-Btn {
-    font-size: 14px;
-    display: block;
+  .footer-area h6 {
+    color: rgb(249, 190, 95);
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
     position: relative;
-    margin: 10px 0 10px 1100px;
-    width: 150px;
-    transition: 0.5s color ease-in-out;
-    &:hover {
-      color: black;
-      background-color: white;
-    }
-    span {
-      padding-left: 5px;
-    }
   }
-  seemore-Btn {
-    span {
-      text-decoration: none;
-    }
+  .footer-area h6::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    background: rgb(249, 190, 95);
+    left: 0;
+    right: 0;
+    bottom: -10px;
   }
+
+  .footer-area p {
+    width: 60%;
+    color: gainsboro;
+    margin: 20px auto;
+  }
+  .footer-area input {
+    z-index: 5;
+  }
+
+  .footer-area Button {
+    font-size: 12.5px;
+    margin-left: -5px;
+  }
+  .btn {
+    color: white;
+  }
+  .container {
+    min-height: 100vh;
+  }
+
   @media (min-width: 769px) and (max-width: 1024px) {
     .most-books {
       .book {

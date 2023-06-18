@@ -1,110 +1,76 @@
+$shadow-color: rgba(0, 0, 0, 0.42);
+
 .most-books {
   background-color: white;
   margin-top: 64px;
-  .books {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    .book {
-      width: 17%;
-      padding: 8px;
-      margin: 10px;
-      border: 0.5px solid #d2d2d2;
-      border-radius: 10px;
-      background-color: white;
-      box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
-    }
-  }
-  .book {
-    img {
-      border: 2px solid #d9d9d9;
-      padding: 4px;
-      width: 150px; // fixed width
-      height: 225px; // fixed height
-      object-fit: cover; // to maintain aspect ratio
-      cursor: pointer;
-      transition: 0.2s transform ease-in-out;
-      &:hover {
-        transform: scale(1.02);
-        opacity: 0.8;
-      }
-    }
 
-    .thumb-content {
-      margin-top: 2px;
+  .container {
+    .books {
       display: flex;
-      justify-content: space-between;
-      h5 {
-        color: #05293f;
-        font-family: "Sansita Swashed", cursive;
-      }
-      .item-price {
-        strike {
-          color: #313335;
-        }
-        span {
-          color: #00b90f;
-        }
-      }
-    }
-  }
-  .allboks-container {
-    display: grid;
-    justify-content: end;
-    text-decoration: none;
-  }
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 auto;
 
-  .seemore-Btn {
-    font-size: 14px;
-    display: block;
-    position: relative;
-    margin: 10px 0 10px 1100px;
-    width: 150px;
-    transition: 0.5s color ease-in-out;
-    &:hover {
-      color: black;
-      background-color: white;
-    }
-    span {
-      padding-left: 5px;
-    }
-  }
-  seemore-Btn {
-    span {
-      text-decoration: none;
-    }
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .most-books {
-    .book {
-      min-height: 8rem;
-      min-width: 10rem;
-    }
-  }
-  .seemore-Btn {
-    font-size: 12px;
-    margin: 0 0 10px 500px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .seemore-Btn {
-    font-size: 12px;
-    margin: 0 0 10px 600px;
-  }
-}
-@media (max-width: 778px) {
-  .most-books .books .book {
-    width: 100%;
-    margin: 10px 0;
-  }
+      .book {
+        width: 18%;
+        padding: 1em;
+        margin: 10px;
+        border: 0.5px solid #d2d2d2;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 5px 5px 15px -2px $shadow-color;
+        display: flex;
+        flex-direction: column;
 
-  .most-books .allboks-container .seemore-Btn {
-    margin: 10px auto;
-    width: 120px;
-    font-size: 12px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+
+        .thumb-content {
+          margin-top: auto;
+        }
+      }
+    }
+
+    .seemore-Btn {
+      // Styles for the button
+    }
+  }
+}
+
+@media (min-width: 300px) {
+  .most-books .container .books .book {
+    width: 39%;
+    height: 19%;
+  }
+}
+
+@media (max-width: 600px) {
+  .most-books .container .books .book {
+    width: 44%;
+    height: 19%;
+  }
+}
+@media (max-width: 580px) {
+  .most-books .container .books .book {
+    width: 75%;
+    height: 9%;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 900px) {
+  .most-books .container .books .book {
+    width: 30%;
+    height: 23%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .most-books .container .books .book {
+    width: 18%;
+    height: 47%;
   }
 }
