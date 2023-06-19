@@ -19,9 +19,9 @@ const Wishlist = () => {
       <div className="row no-gutters">
         <div className="col-md-8">
           <div className="product-details mb-3">
-            <h2>
+            <h1>
               Saved <b>items</b>
-            </h2>
+            </h1>
             {wishlistBooks.length === 0 ? (
               <div className="conatiner text-center mt-5 mx-5">
                 <h4>You haven’t saved an item yet!</h4>

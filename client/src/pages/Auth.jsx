@@ -73,7 +73,7 @@ const Auth = () => {
       >
         <div className="form-container sign-up-container">
           <form onSubmit={handleSignUpSubmit}>
-            <h2>Create Account</h2>
+            <h1>Create Account</h1>
             <input
               type="text"
               placeholder="username"
@@ -98,7 +98,7 @@ const Auth = () => {
         </div>
         <div className="form-container sign-in-container">
           <form onSubmit={handleSignInSubmit}>
-            <h2>Sign in</h2>
+            <h1>Sign in</h1>
             <input
               type="email"
               placeholder="Email"

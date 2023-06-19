@@ -60,12 +60,14 @@
 
 .home-img-text {
   p {
+    font-family: "OpenSans-Italic", sans-serif;
+    font-size: 30px;
     color: $color_1;
     padding-bottom: 20px;
-    width: 60%;
-    line-height: 0.9;
+    width: 70%;
+    line-height: 1.9;
   }
-  h2 {
+  h1 {
     color: $color_2;
     font-size: 40px;
     font-weight: 300;

@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-white bg-dark p-4">
-          © 2022 Copyright:
+          © 2023 Copyright:
           <a className="text-white" href="https://github.com/hogback84">
             Mohamed
           </a>

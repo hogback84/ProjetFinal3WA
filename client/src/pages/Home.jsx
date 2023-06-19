@@ -13,9 +13,9 @@ const Home = () => {
           <div id={`img${i}`} role="img" aria-label="immage_carrosel" />
 
           <div className="home-img-text">
-            <h2>
+            <h1>
               Momo <b> Book Store</b>
-            </h2>
+            </h1>
             <p>
               Bienvenue chez Momo Bookstore, votre librairie en ligne de
               confiance ! Nous proposons une large sélection de livres couvrant

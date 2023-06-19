@@ -169,3 +169,174 @@ $accent-color: #ff8c00;
     padding-left: 0;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// Variabili
+$primary-color: #333;
+$secondary-color: #f1f1f1;
+$accent-color: #ff8c00;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondary-color;
+  padding: 0.5rem 1rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+  }
+
+  .fa-book-open {
+    margin: 0 0.3rem;
+  }
+
+  .navbar-menu-icons {
+    display: none;
+    cursor: pointer;
+
+    .fa-bars {
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+  }
+
+  .navbar-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    z-index: 100;
+
+    gap: 64px;
+    margin-top: 15px;
+
+    li {
+      margin-right: 3rem;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        i {
+          margin-right: 0.3rem;
+        }
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .nav-icon {
+      position: relative;
+      margin-right: 2rem;
+      color: $primary-color;
+      font-size: 1.2rem;
+
+      .navbar-cart {
+        position: absolute;
+        top: -0.2rem;
+        right: -0.6rem;
+
+        color: $secondary-color;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 50%;
+      }
+    }
+
+    .navbar-inline {
+      display: flex;
+      gap: 60px;
+
+      a,
+      button {
+        color: $primary-color;
+        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 0.5rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-items {
+    .navbar-menu-icons {
+      display: block;
+    }
+    .navbar-left {
+      display: none;
+    }
+    .navbar-center {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $secondary-color;
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in;
+      z-index: 9999;
+      gap: 34px;
+      margin-top: 0;
+
+      &.active {
+        // Sostituisci ':target' con '&.active'
+        max-height: 100vh;
+        display: flex;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar-items .navbar-center li {
+    margin-right: 1rem; // Riduci il margine a tuo piacimento
+    gap: 1px;
+  }
+  .navbar-center {
+    gap: 1px;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
